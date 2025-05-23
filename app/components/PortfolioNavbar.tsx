@@ -7,21 +7,21 @@ import NavLink from "react-bootstrap/NavLink";
 import { NavbarCollapse, NavbarToggle } from "react-bootstrap";
 
 const PortfolioNavbar = () => {
-    return (
-        <Navbar fixed="top" expand="lg" className="bg-body-tertiary">
-            <Container>
-                <NavbarBrand href="#home">XUAN PHAM</NavbarBrand>
-                <NavbarToggle aria-controls="navbar-nav"/>
-                <NavbarCollapse id="navbar-nav" className="justify-content-end">
-                    <Nav>
-                        <NavItem><NavLink href="#about">About</NavLink></NavItem>
-                        <NavItem><NavLink href="#projects">Projects</NavLink></NavItem>
-                        <NavItem><NavLink href="#contact">Contact</NavLink></NavItem>
-                    </Nav>
-                </NavbarCollapse>
-            </Container>
-        </Navbar>
-    );
+  return (
+    <Navbar fixed="top" expand="lg" className="bg-body-tertiary" bg="light" data-bs-theme="light">
+      <Container>
+        <NavbarBrand href="/">XUAN PHAM</NavbarBrand>
+        <NavbarToggle aria-controls="navbar-nav" />
+        <NavbarCollapse id="navbar-nav" className="justify-content-end">
+          <Nav>
+            <NavItem><NavLink href="#about">About</NavLink></NavItem>
+            <NavItem><NavLink href="#projects">Projects</NavLink></NavItem>
+            <NavItem><NavLink href="#contact">Contact</NavLink></NavItem>
+          </Nav>
+        </NavbarCollapse>
+      </Container>
+    </Navbar>
+  );
 };
 
 export default PortfolioNavbar;
