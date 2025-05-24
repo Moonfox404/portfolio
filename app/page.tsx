@@ -27,7 +27,7 @@ export default function Home() {
       <main className={styles.main}>
         <PortfolioNavbar/>
         <section id="about">
-          <Container className="vh-md-100">
+          <Container className="min-vh-100">
             <Row>
               <Col lg="8">
                 <div>
@@ -62,14 +62,14 @@ export default function Home() {
                     but we will work together to create something that you can love.
                   </p>
                 </div>
+                <div className="position-absolute start-50">
+                  <Button className="d-none d-lg-block btn-pulsing" href="#projects">&#8964;</Button>
+                </div>
               </Col>
-              <Col lg="4" className="d-none d-lg-block">
-                <img src={prefersDark ? "/profile-dark.svg" : "/profile-light.svg"} height="60%" style={{"opacity": 0.5}}/>
+              <Col lg="4" className="d-none d-lg-block vh-100">
+                <img src={prefersDark ? "/profile-dark.svg" : "/profile-light.svg"} height="1200rem" style={{"opacity": 0.5}}/>
               </Col>
             </Row>
-            <div className="position-absolute start-50 bottom-0 mb-4">
-              <Button className="d-none d-lg-block" href="#projects">&#8964;</Button>
-            </div>
           </Container>
         </section>
         <section id="projects">
