@@ -6,6 +6,7 @@ import ProjectCard from "./components/ProjectCard";
 import ContactForm from "./components/ContactForm";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
+import AccentCircle from "./components/AccentCircle";
 
 export default function Home() {
   const [prefersDark, setPrefersDark] = useState(false);
@@ -26,10 +27,14 @@ export default function Home() {
       <main className={styles.main}>
         <PortfolioNavbar/>
         <section id="about">
-          <Container className="min-vh-100">
+          <Container className="vh-100">
             <Row>
-              <Col md="8">
-                <h1 className="display-1 mt-5">Designer | Developer</h1>
+              <Col lg="8">
+                <div>
+                  <AccentCircle primary={true} size="lg"/>
+                  <AccentCircle primary={false} size="lg"/>
+                  <h1 className="display-1 mt-4">Designer | Developer</h1>
+                </div>
                 <div className="mt-5 mb-5">
                   <h2 className="mb-5">Who am I</h2>
                   <p>
@@ -58,15 +63,26 @@ export default function Home() {
                   </p>
                 </div>
               </Col>
+              <Col lg="4" className="d-none d-lg-block">
+                <img src={prefersDark ? "/profile-dark.svg" : "/profile-light.svg"} height="60%" style={{"opacity": 0.5}}/>
+              </Col>
             </Row>
-            <div className="position-absolute start-50">
+            <div className="position-absolute start-50 bottom-0 mb-4">
               <Button className="d-none d-lg-block" href="#projects">&#8964;</Button>
             </div>
           </Container>
         </section>
         <section id="projects">
           <Container className="fluid">
-            <h1 className="display-3" style={{"paddingTop": "10%", "paddingBottom": "2%"}}>Projects</h1>
+            <Row xs={1} md={2} className="align-items-center" style={{"paddingTop": "10%", "paddingBottom": "2%"}}>
+              <Col className="col-6 col-lg-3">
+                <h1 className="display-3">Projects</h1>
+              </Col>
+              <Col className="col-6 col-lg-2">
+                <AccentCircle primary={false} size="sm" />
+                <AccentCircle primary={true} size="md" />
+              </Col>
+            </Row>
             <Row xs={1} md={2} className="g-4">
               <Col>
                 <ProjectCard
@@ -109,7 +125,12 @@ export default function Home() {
         </section>
         <section id="contact">
           <Container>
-            <h1 className="display-2" style={{"paddingTop": "10%", "paddingBottom": "2%"}}>I would love to work with you...</h1>
+            <div style={{"paddingTop": "10%", "paddingBottom": "2%"}}>
+              <h1 className="display-2">I would love to work with you...</h1>
+              <AccentCircle primary={false} size="sm" />
+              <AccentCircle primary={false} size="sm" />
+              <AccentCircle primary={true} size="sm" />
+            </div>
             <p className="mb-5">
               Briefly describe your idea for your project,
               and we can get in touch to work out the details.

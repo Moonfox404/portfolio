@@ -33,10 +33,14 @@ const ProjectCard = ({ imgSrc, projectName, projectDescription, href, prefersDar
           "backgroundColor": prefersDark ? "rgba(0, 0, 0, 0.9)" : "rgba(255, 255, 255, 0.9)",
         }}
       >
-        <CardTitle>{projectName}</CardTitle>
-        <CardText>{projectDescription}</CardText>
-        <div className="text-center">
-          <Button variant="primary" href={href}>See More</Button>
+        <div className="d-flex flex-column align-items-center justify-content-around h-100">
+          <div>
+            <CardTitle style={{"textAlign": "left"}}>{projectName}</CardTitle>
+            <CardText style={{"textAlign": "left"}}>{projectDescription}</CardText>
+          </div>
+          <div className="text-center">
+            <Button variant="primary" href={href}>See More</Button>
+          </div>
         </div>
       </CardImgOverlay>
     </Card>
