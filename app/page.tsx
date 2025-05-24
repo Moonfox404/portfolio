@@ -27,7 +27,7 @@ export default function Home() {
       <main className={styles.main}>
         <PortfolioNavbar/>
         <section id="about">
-          <Container className="vh-100">
+          <Container className="vh-md-100">
             <Row>
               <Col lg="8">
                 <div>
