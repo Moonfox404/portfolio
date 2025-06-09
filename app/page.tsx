@@ -87,8 +87,8 @@ export default function Home() {
               <Col>
                 <ProjectCard
                   projectName="Service Site"
-                  projectDescription="A website to advertise services provided by a business"
-                  href="/coming-soon"
+                  projectDescription="A website to advertise the services of a tutoring business. Made using React, Tailwind, DaisyUI, NextJS"
+                  href="https://tutoring-service.netlify.app"
                   imgSrc="/service-placeholder"
                   prefersDark={prefersDark}
                 />

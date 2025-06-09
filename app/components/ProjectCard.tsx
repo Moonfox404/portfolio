@@ -39,7 +39,7 @@ const ProjectCard = ({ imgSrc, projectName, projectDescription, href, prefersDar
             <CardText style={{"textAlign": "left"}}>{projectDescription}</CardText>
           </div>
           <div className="text-center">
-            <Button variant="primary" href={href}>See More</Button>
+            <Button variant="primary" href={href} target={href != "/coming-soon" ? "_blank" : undefined}>See More</Button>
           </div>
         </div>
       </CardImgOverlay>
