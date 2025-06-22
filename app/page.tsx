@@ -96,8 +96,8 @@ export default function Home() {
               <Col>
                 <ProjectCard
                   projectName="Game"
-                  projectDescription="A simple game which runs on web browsers"
-                  href="/coming-soon" 
+                  projectDescription="A simple cup flipping game which runs on web browsers. Made using React, Tailwind, DaisyUI, NextJS, Motion"
+                  href="https://swapped-game.netlify.app" 
                   imgSrc="/game-placeholder"
                   prefersDark={prefersDark}
                 />

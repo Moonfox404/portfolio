@@ -35,8 +35,8 @@ const ProjectCard = ({ imgSrc, projectName, projectDescription, href, prefersDar
       >
         <div className="d-flex flex-column align-items-center justify-content-around h-100">
           <div>
-            <CardTitle style={{"textAlign": "left"}}>{projectName}</CardTitle>
-            <CardText style={{"textAlign": "left"}}>{projectDescription}</CardText>
+            <CardTitle className="px-5" style={{"textAlign": "left"}}>{projectName}</CardTitle>
+            <CardText className="p-5" style={{"textAlign": "left"}}>{projectDescription}</CardText>
           </div>
           <div className="text-center">
             <Button variant="primary" href={href} target={href != "/coming-soon" ? "_blank" : undefined}>See More</Button>
