@@ -105,8 +105,8 @@ export default function Home() {
               <Col>
                 <ProjectCard
                   projectName="E-Commerce Site"
-                  projectDescription="A website for a business to sell its products online"
-                  href="/coming-soon" 
+                  projectDescription="An online store focusing on selling common furniture items. Made using React, Tailwind, DaisyUI, NextJS"
+                  href="https://furniture-forest.netlify.app" 
                   imgSrc="/ecommerce-placeholder"
                   prefersDark={prefersDark}
                 />
